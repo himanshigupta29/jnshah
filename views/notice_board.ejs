@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- Somehow I got an error, so I comment the title, just uncomment to show -->
+    <!-- <title>Responsive Navigation Menu</title> -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="/assets/css/style.css">
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+
+<style>
+
+.container {
+  padding: 30px;
+}
+
+.card {
+    max-width: 500px;;
+    font-family: 'Noto Sans', sans-serif;
+    margin-bottom: 24px;
+    text-align: left;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #D1D1D1;
+    box-shadow: 0px 0px 20px -7px rgba(91, 89, 89, 0.5);
+    padding:  20px;;
+}
+
+.card-header {
+  font-size: 14px;
+  margin-bottom: 20px;;
+  border-bottom: 1px solid #f7f7f7;
+  padding-bottom: 10px;;
+  font-weight: bold;
+}
+
+.card-content {
+  font-size: 16px;
+}
+.card-item {
+  margin-bottom: 20px;
+}
+
+.card-footer {
+  font-size: 12px;
+  padding-top: 10px;;
+  margin-top: 20px;;
+  border-top: 1px solid #f7f7f7;
+}
+
+.date {
+  margin-left: 10px;;
+  color: #FF7B00;
+}
+
+</style>  
+  
+</head>
+  <body>
+
+    <%- include('./navbar'); %>
+
+
+  <div class="innerheader">
+    <h2>
+      NOTICE BOARD
+    </h2>
+  </div>
+
+    <div class="container">
+
+      <div class="card">
+
+        <div class="card-header">
+          Class 1 to 4
+        </div>
+  
+        <div class="card-content">
+            <div class="card-item">
+                विद्यालय में अध्यापक-अभिभावक सभा का आयोजन दिनांक 21/10/2020 को किया जा रहा है, उसमे आपकी उपस्थिति अनिवार्य है।
+                <br/>
+                समय: सुबह 9 बजे से 12 बजे तक
+          </div>
+          <div class="card-item">
+              We request every parents to attend PARENTS TEACHER MEETING which is going to held on 21/10/2020 Wednesday.
+              <br/>
+              Timing: 9 a.m to 12 p.m
+          </div>
+        </div>
+  
+        <div class="card-footer">
+          Posted on <span class="date"> 20 October, 2020</span>
+        </div>
+  
+      </div>
+
+    </div>
+
+
+
+</body>
+</html>

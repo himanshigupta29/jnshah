@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- Somehow I got an error, so I comment the title, just uncomment to show -->
+    <!-- <title>Responsive Navigation Menu</title> -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+
+<style>
+
+.container {
+  padding: 30px;
+  text-align: center;
+}
+
+.container img{
+    width: 100%;
+}
+
+
+.separator {
+  margin: 10px auto;
+  border-top: 1px solid #f7f7f7;
+}
+
+
+@media (min-width: 775px) {
+  .container img, .separator{
+    max-width: 770px;
+  }
+}
+
+
+
+</style>  
+  
+</head>
+  <body>
+
+    <%- include('./navbar'); %>
+
+
+  <div class="innerheader">
+    <h1>
+      COVID 19 ANNOUNCEMENTS
+    </h1>
+  </div>
+
+    <div class="container">
+
+      <!-- <img src = "/assets/images/diwali_1.jpg" alt = "covid 19 guidelines" />
+      <div class="separator"></div> -->
+      <img src = "/assets/images/do_donts.jpg" alt = "covid 19 safety measures" />
+      <div class="separator"></div>
+      <img src = "/assets/images/dos_donts_2.jpeg" alt = "covide 19 dos and donts" />
+      <div class="separator"></div>
+      <img src = "/assets/images/scholl_advisory.jpg" alt = "school advisory notice" />
+
+    </div>
+
+</body>
+</html>
+

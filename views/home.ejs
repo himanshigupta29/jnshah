@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- Somehow I got an error, so I comment the title, just uncomment to show -->
+     <title>J N Shah Memorial School</title> 
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="/assets/css/style.css">
+  
+
+  <style>
+
+    .banner-inner {
+      background-image: url(/assets/images/banner.jpeg);
+      height: 80vh;
+      background-repeat: no-repeat;
+      background-position: center;
+      /* position: relative; */
+      width: 80vw;
+      margin: 0 auto;
+    }
+
+    .inner-heading {
+      color: #ffffff;
+      /* position: absolute; */
+      /* left: 30%; */
+      /* bottom: 0; */
+      text-align: center;
+      font-size: 1rem;
+      width: 100%;
+      /* margin-top: 50%; */
+      background-color: rgba(202,124,146,0.7);
+    }
+
+    .enroll-wrap {
+      background: url(/assets/images/blue-bg.jpg);
+      padding: 50px 0;
+      color: #ffffff;
+      text-align: center;
+      /* margin: 30px 0; */
+    }
+
+    .info-card-wrap {
+      margin-left: 15px;
+      margin-right: 15px;
+      width: 100%;
+      /* max-width: 320px; */
+      margin-bottom: 50px;
+    }
+
+    .enroll-info {
+      margin: 10px 0;
+    }
+
+    .enroll-wrap  h1{
+      font-size: 3rem;
+    }
+
+    .enroll-wrap  a{
+      color: #ffffff;
+      font-size: 2em;
+      text-decoration: none;
+
+    }
+
+    .poster {
+      text-align: center;
+      margin: 20px 0;
+      padding: 0 20px;
+    }
+
+    .poster img{
+      width: 100%;
+    }
+
+    .from-desk-sec-heading {
+      text-align: center;
+      margin: 50px 0;
+      /* color: #39AECF; */
+      /* color: #043E52; */
+      color: #56225e;
+
+    }
+
+    .from-desk-sec-heading h1{
+      font-size: 2rem;
+    }
+
+    .from-desk-sec-content {
+      display: flex;
+      flex-flow: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .info-img-wrap {
+      text-align: center;
+      height: 196px;
+      background-color: #fef6ff;
+    }
+
+    .speaker-content {
+      text-align: justify;
+      margin: 20px 0 5px;
+    }
+
+    .read-more {
+      /* letter-spacing: 2px; */
+      font-size: 1em;
+    }
+
+    .written-by {
+      text-align: right;
+    }
+
+    .written-by h3{
+      font-weight: 600;;
+      color: #3c1942;
+    }
+
+    .designation {
+      font-size: 0.8em;
+      letter-spacing: 2px;
+      border-bottom: 1px solid #d2caca;
+    }
+
+    .admin-img-dummy {
+      /* background-color: aqua; */
+      height: 196px;
+      
+    }
+
+    .from-desk-sec {
+      padding: 0 20px;
+    }
+
+    @media (min-width: 800px) {
+
+      .enroll-wrap {
+        padding: 100px 0;
+      }
+
+
+      .poster img {
+        max-width: 850px;;
+
+      }
+
+
+      .inner-heading {
+        font-size: 2rem; 
+      }
+      .from-desk-sec-heading h1{
+        font-size: 3rem;
+      }
+
+      .info-card-wrap {
+        max-width: 320px;
+      }
+
+      .from-desk-sec {
+        padding: 0 100px;
+      }
+
+      .designation {
+        border: none;
+      }
+
+    }
+
+  </style>
+</head>
+  <body>
+
+    <%- include('./navbar'); %>
+
+        <!-- <br/>
+        <br/> -->
+
+<!-- <div style=" text-align: center;">
+      <img src = "/assets/images/logo.jpeg" />
+</div> -->
+
+<!-- <br/> -->
+
+<!-- <div style=" text-align: center; padding: 0 20px;">
+    <h2>
+        J N Shah Memorial School, Unnao        
+    </h2>
+</div> -->
+
+<div class="banner">
+  <div class="banner-inner">
+    <div class="inner-heading">
+      <h2>
+        Welcome to J N Shah Memorial School        
+      </h2>
+    </div>
+  </div>
+</div>
+
+<!-- <section class="festive-poster poster">
+  <img src = "/assets/images/diwali_2.jpg" />
+</section> -->
+
+<section class="covid-school-advisory poster">
+  <img src = "/assets/images/scholl_advisory.jpg" alt = "school advisory notice for covid19" />
+  <br/>
+  <a href = "/covid19">
+    View more COVID-19 Announcements
+  </a>
+
+</section>
+
+<section class = "from-desk-sec">
+
+  <div class="from-desk-sec-heading">
+    <h1>
+      From the Desk Of
+    </h1>
+  </div>
+  <div class="from-desk-sec-content">
+    
+
+    <div class="info-card-wrap">
+      <div class="info-img-wrap">
+        <img src  = "/assets/images/admin/rinku_gupta_small_2.png" alt = "" />
+
+        <!-- <img src  = "/assets/images/admin/rinku_gupta_small.png" alt = "" /> -->
+      </div>
+      <div class="info-content-wrap">
+        <p class="speaker-content">
+          Today in this dynamic world children need to be made aware of the moral values and value of primary greatness or goodness in their character. A child is the most valuable in any country. Every child holds the promise of a bright future for his ...
+          <a href="/principal" class="read-more">Read More</a>          
+        </p>
+
+
+        <div class="written-by">
+          <h3>
+            Rinku Gupta
+          </h3>
+  
+          <div class="designation">
+            PRINCIPAL
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+      
+    <div class="info-card-wrap">
+      <div class="info-img-wrap">
+        <img src  = "/assets/images/admin/manan_gupta_sm_2.png" alt = "" />
+      </div>
+      <div class="info-content-wrap">
+        <p class="speaker-content">
+          This is a universal truth that every child is special. The divine energy had sent every individual with a specific quality. Every child has a spark but how many people are aware of this? To compare two things or two individuals is the common tendency of ...
+          <a href="/vice-chairman" class="read-more">Read More</a>          
+        </p>
+
+        <div class="written-by">
+
+          <h3>
+            Manan Gupta
+          </h3>
+          <div class="designation">
+            VICE CHAIRMAN
+          </div>
+
+        </div>
+
+
+
+      </div>
+    </div>
+
+    <div class="info-card-wrap">
+      <div class="info-img-wrap">
+
+        <div class="admin-img-dummy"></div>
+        <!-- <img src  = "/assets/images/admin/rinku_gupta_small.png" alt = "" /> -->
+
+
+      </div>
+      <div class="info-content-wrap">
+        <p class="speaker-content">
+          Children are the future of a country and mothers are the main contributors towards the formation and development of a child. We at J.N. Shah provide the best to a girl child in order to make her primary contributor towards the ...
+          <a href="/admin-officer" class="read-more">Read More</a>          
+        </p>
+
+        <div class="written-by">
+          <h3>
+            Govind Kumar Gupta
+          </h3>
+          <div class="designation">
+            ADMINISTRATIVE OFFICER
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </div>
+
+
+</section>
+
+<section class = "enroll-wrap">
+  <div class="title">
+    <h1>
+      Call To Enroll Your Child
+    </h1>
+  </div>
+  <p class="enroll-info">
+    For this year, Admissions are open for all classes till 10 Nov 2020 
+  </p>
+  
+  <div class="phone-call">
+    <a href="tel:7839460897">
+      (+91) - 7839460897 
+    </a>
+  </div>
+
+</section>
+
+
+
+
+</body>
+</html>
