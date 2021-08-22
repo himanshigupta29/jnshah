@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<!-- Created By CodingNepal -->
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <!-- Somehow I got an error, so I comment the title, just uncomment to show -->
      <title>J N Shah Memorial School</title> 
-    <!-- <link rel="stylesheet" href="style.css"> -->
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    
+    <meta name="description" content="J N Shah Memorial School is one of the top schools in Unnao, U.P. It is best I.CS.E board-certified school with world-class infrastructure." />
+    <meta name="keywords" content="Best Schools in Unnao, Schools in Unnao, Top Schools in Unnao, School in Unnao, Best School in Unnao, school Unnao, ICSE school in Unnao, High School, Inter College, Unnao Schooling, English Medium"/>
+ 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="/assets/css/style.css">
+
+    <link rel="stylesheet" href="/assets/css/navbar.css">
   
     <style>
 
@@ -293,6 +294,17 @@
       </div>
     </section>
 
+    <script>
 
+      const nav = document.querySelector('.nav-links');
+      const hamburger = document.querySelector('.hamburger');
+      hamburger.addEventListener('click', (e) => {
+
+          nav.classList.toggle('open')
+          hamburger.classList.toggle('close')
+
+      })
+  </script>
+  
   </body>
 </html>
